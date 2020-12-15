@@ -1,0 +1,19 @@
+<p>event-component works!</p>
+<div class="container">
+    <h3>event basic, not param, change value js and bindding from js to scrent: {{counter}}</h3> 
+    <div class="input-group mb-3">
+        <button (click)="increment()">increment value</button>
+    </div>
+
+    <h3>event basic, param event, change value js and bindding from js to scrent: {{label}}</h3> 
+    <div class="input-group mb-3">
+        <input type="text" (change)="changeByParam($event)"/>
+    </div>
+
+    <h3>event basic, bindding 2 way, change value js and bindding from js to scrent: {{labelValue2way}}</h3> 
+    <div class="input-group mb-3">
+        <input type="text" [(ngModel)]="labelValue2way" name="labelValue2way"/>
+    </div>
+
+
+</div>
