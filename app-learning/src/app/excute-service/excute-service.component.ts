@@ -9,7 +9,7 @@ import { TimeServiceService } from '../service/service_basic/time-service.servic
 export class ExcuteServiceComponent implements OnInit {
 
   timeValue: String;
-  constructor(private time: TimeServiceService) { 
+  constructor(private time: TimeServiceService) {  //Dependency Injection
     this.timeValue = time.getTime();
   }
   ngOnInit(): void {
