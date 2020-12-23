@@ -398,15 +398,25 @@
 
     <div class="card card-small" (click)="selection.value = 'service'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <a routerLink="excuteServiceComponent">excuteServiceComponent</a>
+      <a routerLink="excuteServiceComponent">excuteService</a>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'build'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'directivesComponentComponent'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <a routerLink="directivesComponentComponent">directivesComponentComponent</a>
+      <a routerLink="directivesComponentComponent">directivesComponent</a>
     </div>
 
-    
+    <div class="card card-small" (click)="selection.value = 'tranferDataBetweenComponent'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <a routerLink="tranferDataBetweenComponentComponent">tranferDataComponent</a>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'componentLifecycle'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <a routerLink="componentLifecycleComponent">componentLifecycle</a>
+    </div>
+
+  
     
   </div>
 
@@ -421,6 +431,19 @@
       <pre *ngSwitchCase="'bindding'">use to bind data from component to  view and from view to a component,<br/> first is one-way data binding and the second is two-way data binding</pre>
       <pre *ngSwitchCase="'event'">events need to be handled to perform some kind of action. This is where <br/> event binding</pre>
       <pre *ngSwitchCase="'service'"> Service is a broad category encompassing any value, function, or feature <br/> that an app needs. A service is typically a class with a narrow,<br/> well-defined purpose. It should do something specific and do it well. The @Injectable() <br/> decorator specifies that Angular can use this class in the DI system. The metadata, providedIn: <br/>'root', means that the HeroService is visible throughout the application.</pre>
+      <pre *ngSwitchCase="'directivesComponentComponent'">1) Components: Không có nghi ngờ gì khi gọi component là directive cũng được,<br/> vì rõ ràng là component cho phép định nghĩa selector và gọi ra như <br/>một thẻ html tag (<component-name></component-name>)<br/>2) Structural directives: Là directive cấu trúc, dùng để vẽ html, hiển thị data lên giao <br/>diện html. Ví dụ ngFor, ngIf<br/> - Ng-if… else<br/> - Ng-Template<br/> - Ng-Container<br/> - NgSwitch and NgSwitchCase<br/>3) Attribute directives: Thêm các thuộc tính động cho element html, ví dụ ngStyle</pre>
+      <pre *ngSwitchCase="'tranferDataBetweenComponent'">1</pre>
+      <pre *ngSwitchCase="'componentLifecycle'">
+      1) constructure: khởi tạo class
+      2) ngOnChange: khởi tạo sau constructure .Thực hiện khi truyền data giữa các component. khi một hoặc nhiều thuộc tính đầu vào ràng buộc dữ liệu thay đổi
+      3) ngOnInit: khởi tạo lần duy nhất, sau lần đầu tiên của ngOnChange
+      4) ngDoCheck: khởi tạo sau ngOnChange và ngOnInit
+      5) ngAfterContentInit: khởi tạo 1 lần duy nhất sau ngDoCheck 
+      6) ngAfterContentChecked: khởi tạo sau ngAfterContentInit(1 lần duy nhất vì ngAfterContentInit chỉ khởi tạo 1 lần) và tiêp sau ngDoCheck(nhiểu lần)
+      7) ngAfterViewInit: khởi tạo 1 lần duy nhất sau ngAfterContentChecked 
+      8) ngAfterViewInit: Khởi tạo 1 lần sau ngAfterViewInit và nhiều lần sau ngAfterContentChecked
+      9) ngOnDestroy: 
+      </pre>
      
   </div>
   

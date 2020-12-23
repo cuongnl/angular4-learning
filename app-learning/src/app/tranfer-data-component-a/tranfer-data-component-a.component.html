@@ -1,0 +1,9 @@
+<p>child component a</p>
+<div class="container" style="width: 99%; min-height: 200px; display: inline-block; border: 1px solid greenyellow;">
+    <h2> - tranfer data with @Input()</h2>
+    <h3>master name : {{masterName}}</h3> 
+    <h3 *ngFor="let item of listNameChild">list name : {{item}}</h3>
+    <br/>
+    <h3> - tranger data with @Output() : {{varBoolean}}</h3>
+    <button class="btn btn-primary" type="button" (click)="outputSubmit(varBoolean)">Text</button>
+</div>

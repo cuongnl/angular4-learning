@@ -1,0 +1,18 @@
+<p>component-lifecycle works!</p>
+
+    
+    <input class="form-control" type="text" name="" [(ngModel)]="placeholder" aria-label="Recipient's " aria-describedby="my-addon">
+    <b>{{placeholder}}</b>
+    <button class="btn btn-primary" type="button" (click)="onSubmit()">submit</button>
+    <div style="width:5px; display: inline-block"></div>
+    <button class="btn btn-primary" type="button">reset</button>
+    <div class="container">
+        <ul class="list-group" >
+            <li class="list-group-item"*ngFor="let item of listLifecycle" >{{item}}</li>
+        </ul>
+    </div>
+    <br/>
+    <app-ng-on-change-life-cycle [placeholder] = "placeholder" [listLifecycle]="listLifecycle"></app-ng-on-change-life-cycle>
+
+    <br/>
+    <img src="../../assets/image/lifecicle.png" class="rounded" alt="lifecicle">
