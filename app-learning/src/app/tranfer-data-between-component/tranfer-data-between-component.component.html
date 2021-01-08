@@ -2,6 +2,7 @@
 <div class="container" style="width: 100%; min-height: 200px; border:1px solid blue">
     <h3>masterName : {{masterName}} and length: {{listName.length}}</h3>
     <h3>data from child : {{dataBooleanFromChild}}</h3>
-    <app-tranfer-data-component-a [listNameChild]="listName" [masterName] = "masterName" (outputSubmited)="outputSubmitParrent($event)"></app-tranfer-data-component-a>
+    <h3>data from child input : {{dataInputFromChild}}</h3>
+    <app-tranfer-data-component-a [listNameChild]="listName" [masterName] = "masterName" (outputSubmited)="outputSubmitParrent($event)" (tranferInputData)="outputSubmitParrentInput($event)"></app-tranfer-data-component-a>
     <app-tranfer-data-component-b></app-tranfer-data-component-b>
 </div>

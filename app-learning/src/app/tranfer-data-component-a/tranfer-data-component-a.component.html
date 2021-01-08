@@ -5,5 +5,11 @@
     <h3 *ngFor="let item of listNameChild">list name : {{item}}</h3>
     <br/>
     <h3> - tranger data with @Output() : {{varBoolean}}</h3>
-    <button class="btn btn-primary" type="button" (click)="outputSubmit(varBoolean)">Text</button>
+    <button class="btn btn-primary" type="button" (click)="outputSubmit()">Text</button>
+
+    <br/>
+    <h3> - tranfer data input with @output() : {{tranferInputData}}</h3>
+    
+    <input type="text" class="form-control" (change)="actionTranferInputData($event.target.value)">
+    
 </div>

@@ -13,12 +13,17 @@ export class TranferDataBetweenComponentComponent implements OnInit {
   masterName: String = "master_name";
 
   dataBooleanFromChild: boolean;
+  dataInputFromChild: String;
 
   ngOnInit(): void {
   }
 
   outputSubmitParrent(param : boolean){
     this.dataBooleanFromChild = param;
+  }
+
+  outputSubmitParrentInput(param: String){
+    this.dataInputFromChild = param;
   }
 
 }

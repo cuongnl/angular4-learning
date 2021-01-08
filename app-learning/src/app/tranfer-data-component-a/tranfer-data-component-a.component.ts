@@ -10,6 +10,7 @@ export class TranferDataComponentAComponent implements OnInit {
   @Input() listNameChild: String[];
   @Input() masterName: String;
   @Output() outputSubmited = new EventEmitter<boolean>();
+  @Output() tranferInputData = new EventEmitter<String>();
   varBoolean: boolean = false;
 
   constructor() { }
@@ -17,9 +18,13 @@ export class TranferDataComponentAComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  outputSubmit(agreed: boolean){
-    this.outputSubmited.emit(agreed);
+  outputSubmit(){
     this.varBoolean = !this.varBoolean;
+    this.outputSubmited.emit(this.varBoolean);
+  }
+
+  actionTranferInputData(param: String){
+    this.tranferInputData.emit(param);
   }
 
 }
