@@ -121,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "app-learning"
+  "defaultProject": "app-learning",
+  "cli": {
+    "analytics": "ce28715f-d5f8-4530-86f3-d156501b893a"
+  }
 }
