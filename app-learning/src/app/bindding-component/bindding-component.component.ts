@@ -12,6 +12,10 @@ export class BinddingComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  infoInterpolation = {
+    name: "INTERPOLATION"
+  }
+
   isBindding: String = "this is bindding";
 
 }
