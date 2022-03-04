@@ -1,41 +1,75 @@
 <p>bindding-component works!</p>
+
+<img src="../../assets/image/angular-data-binding.png" class="rounded" alt="Cinque Terre" style="width:100%">
+<img src="../../assets/image/bindding-1.png" class="rounded" alt="Cinque Terre">
+
 <div class="container" style="overflow: auto;">
-    <h1>-------------- start INTERPOLATION --------------</h1>
+    <h4>-------------- INTERPOLATION BINDING --------------</h4>
     <h6>
         Khái niệm <br/>
-        - component trong Angular chỉ là một TypeScript (TS) class thông thường và với một decorator để gắn thêm meta-data như template mà nó định nghĩa là gì.<br/>
-        - TS class và template này hoàn toàn không biết đến nhau, Angular xử lý để gắn chúng lại<br/>
-        - Hiển thị giá trị typescript trong cặp dấu `{{  `
+        - Hỗ trợ chuyền dữ liệu từ component ra view<br/>
+        - Vị chí trong nội dung thẻ và thuộc tính thẻ<br/>
+        - Hỗ trợ expression 
     </h6>
 
+    <h6>Coding</h6>
     <img src="../../assets/image/interpolation.png" class="rounded" alt="Cinque Terre">
     <br/>
-    <h6>Demo: {{infoInterpolation.name}}</h6>
-
-    <h1>-------------- end INTERPOLATION --------------</h1>
-
-    <h1>-------------- start PROPERTY BINDING --------------</h1>
-    <h6>
-        Lý thuyết:
-         - Với DOM chúng ta có 2 khái niệm khác nhau là property và attribute
-         - tag HTML input: <input type="text" class="form-control">
-         - type và class là attribute
-         - 
+    <h6>Demo:<br/>
+        - binding data trong nội dung thẻ: {{infoInterpolation.name}}<br/>
+        - expression 1 + 1: {{1 + 1}}<br/>
+        - binding data trong thuộc tính thẻ: 
     </h6>
+    <input type="text" disabled="true" style="width:50%" class="form-control" value={{isBindding}}>
+
+    <h4>-------------- PROPERTY BINDING --------------</h4>
+    <h6>
+        Khái niệm <br/>
+        - Hỗ trợ chuyền dữ liệu từ component ra view<br/>
+        - Vị chí trong thuộc tính thẻ<br/>
+        - Hỗ trợ expression 
+    </h6>
+    <h6>Coding</h6>
+    <img src="../../assets/image/property_binding.png" class="rounded" alt="Cinque Terre">
+    <br/>
+    <h6>Demo:<br/>
+        - binding data trong thuộc tính thẻ: </h6>
+    <input type="text" [value]="infoInterpolation.name"/>
+    <h6>- binding data expression: </h6>
+    <input type="text" [value]="1+1"/>
+
+    <h4>-------------- EVENT BINDING --------------</h4>
+    <h6>
+        Khái niệm <br/>
+        - kích hoạt event và chuyền dữ liệu từ view sang component<br/>
+        - Vị chí trong thuộc tính thẻ<br/>
+    </h6>
+    <h6>Coding</h6>
+    <img src="../../assets/image/event-bindding.png" class="rounded" alt="Cinque Terre">
+    <br/>
+    <h6>Demo:</h6>
+    <button (click)="showInfo()">Click me!</button> 
 
 
-    <h1>-------------- end PROPERTY BINDING --------------</h1>
+    <h4>-------------- TWO-WAY BINDING --------------</h4>
+    <h6>
+        Khái niệm <br/>
+        - là kết hợp của binding dữ liệu từ class ra template thông qua property binding, và từ template vào class thông qua event binding<br/>
+        - Vị chí trong thuộc tính thẻ<br/>
+    </h6>
+    <h6>Coding</h6>
+    <img src="../../assets/image/event-bindding.png" class="rounded" alt="Cinque Terre">
+    <br/>
+    <h6>Demo:</h6>
+    <input type="text" class="form-control" [(ngModel)]="isBindding">
+    <input type="text" class="form-control" [(ngModel)]="isBindding">
 
-    <h3>bindding 1 way from component to element </h3>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" value={{isBindding}}>
-    </div>
 
-    <h3>bindding 1 way from js to scrent [</h3>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" [value]="isBindding">
-    </div>
 
-    <img src="../../assets/image/bindding-1.png" class="rounded" alt="Cinque Terre">
-    <img src="../../assets/image/bindding-2.png" class="rounded" style="width: 100%;" alt="Cinque Terre">
+    <h3>----------------------------------------------</h3>
+
+
+
+    <!-- <img src="../../assets/image/bindding-1.png" class="rounded" alt="Cinque Terre"> -->
+    <!-- <img src="../../assets/image/bindding-2.png" class="rounded" style="width: 100%;" alt="Cinque Terre"> -->
 </div>

@@ -18,4 +18,8 @@ export class BinddingComponentComponent implements OnInit {
 
   isBindding: String = "this is bindding";
 
+  showInfo(){
+    alert("event binding by function");
+  }
+
 }

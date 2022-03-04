@@ -386,6 +386,17 @@
       <a routerLink="bindding">bindding</a>
     </div>
 
+    <div class="card card-small" (click)="selection.value = 'structureDirective'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <a routerLink="structureDirective">structureDirective</a>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'attributeDirective'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <a routerLink="attributeDirective">attributeDirective</a>
+    </div>
+
+
     <div class="card card-small" (click)="selection.value = 'event'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <a routerLink="event">event</a>
@@ -433,6 +444,7 @@
       <pre *ngSwitchCase="'test'">ng test</pre>
       <pre *ngSwitchCase="'build'">ng build --prod</pre>
       <pre *ngSwitchCase="'bindding'">use to bind data from component to  view and from view to a component,<br/> first is one-way data binding and the second is two-way data binding</pre>
+      <pre *ngSwitchCase="'structureDirective'">DEMO</pre>
       <pre *ngSwitchCase="'event'">events need to be handled to perform some kind of action. This is where <br/> event binding</pre>
       <pre *ngSwitchCase="'service'"> Service is a broad category encompassing any value, function, or feature <br/> that an app needs. A service is typically a class with a narrow,<br/> well-defined purpose. It should do something specific and do it well. The @Injectable() <br/> decorator specifies that Angular can use this class in the DI system. The metadata, providedIn: <br/>'root', means that the HeroService is visible throughout the application.</pre>
       <pre *ngSwitchCase="'directivesComponentComponent'">1) Components: Không có nghi ngờ gì khi gọi component là directive cũng được,<br/> vì rõ ràng là component cho phép định nghĩa selector và gọi ra như <br/>một thẻ html tag (<component-name></component-name>)<br/>2) Structural directives: Là directive cấu trúc, dùng để vẽ html, hiển thị data lên giao <br/>diện html. Ví dụ ngFor, ngIf<br/> - Ng-if… else<br/> - Ng-Template<br/> - Ng-Container<br/> - NgSwitch and NgSwitchCase<br/>3) Attribute directives: Thêm các thuộc tính động cho element html, ví dụ ngStyle</pre>

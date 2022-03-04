@@ -1,0 +1,62 @@
+<h1>ATTRIBUTE DIRECTIVE: thay đổi cách hiển thị (style) hoặc hành vi của một DOM element/Component/Directive khác</h1>
+
+<h4>------------------CLASS BINDING------------------</h4>
+<h6>
+    Lý thuyết<br/>
+    - Cần thay đổi (thêm, xóa) một số class tùy thuộc vào một số điều kiện nào đó<br/>
+    - Là câu điều kiện<br/>
+    - Mẫu câu: *ngIf="expression"<br/>
+</h6>
+
+<h6>Coding</h6>
+<img src="../../assets/image/ng-if.png" class="rounded" alt="Cinque Terre">
+
+<h6>Demo</h6>
+<button (click)="incrementAge()">Click me!</button>
+<h6>
+    name: {{user.name}}<br/>
+    age: {{user.age}}<br/>
+</h6>
+
+<div *ngIf="user.age % 2 == 0; else ageLe">
+    Năm nay tuổi bạn là chẵm
+</div>
+<ng-template #ageLe>
+    Năm nay tuổi bạn là lẻ
+</ng-template>
+
+<br/><br/>
+<h4>------------------CẤU TRÚC NGFOROF------------------</h4>
+
+
+
+<h6>
+    Lý thuyết<br/>
+    - là 1 property đặc biệt<br/>
+    - Là duyệt array trên template<br/>
+    - Mẫu câu: *ngFor="let item of array"<br/>
+    - Thêm, xóa, thay đổi cấu trúc cây DOM<br/>
+</h6>
+
+<h6>Coding</h6>
+<img src="../../assets/image/ng-for.png" class="rounded" alt="Cinque Terre">
+
+<h6>Demo</h6>
+<div *ngFor="let author of authors; index as idx; count as total">
+    ({{idx}})/({{total}}): {{author.id}} - {{author.firstName}}
+    {{author.lastName}}
+</div>
+
+<h6>Demo NGFOROF VÀ NG-TEMPLATE</h6>
+<ng-template
+  ngFor
+  [ngForOf]="authors"
+  let-author
+  let-idx="index"
+  let-total="count"
+>
+  <div>
+    ({{idx}})/({{total}}): {{author.id}} - {{author.firstName}}
+    {{author.lastName}}
+  </div>
+</ng-template>

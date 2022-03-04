@@ -7,6 +7,8 @@ import { DirectivesComponentComponent } from '../directives-component/directives
 import { TranferDataBetweenComponentComponent } from '../tranfer-data-between-component/tranfer-data-between-component.component';
 import { ComponentLifecycleComponent } from '../component-lifecycle/component-lifecycle.component';
 import { ContentProjectionExcuteComponent } from '../content-projection-excute/content-projection-excute.component';
+import { StructureDirectiveComponent } from '../structure-directive/structure-directive.component';
+import { AttributeDirectiveComponent } from '../attribute-directive/attribute-directive.component';
 
 export const RoutesConfig: Routes = [
     {
@@ -36,10 +38,19 @@ export const RoutesConfig: Routes = [
     {
         path: 'componentLifecycleComponent',
         component: ComponentLifecycleComponent
-    }
-    ,
+    },
+
     {
         path: 'componentContentProjection',
         component: ContentProjectionExcuteComponent
+    },
+    
+    {
+        path: 'structureDirective',
+        component: StructureDirectiveComponent
+    },
+    {
+        path: 'attributeDirective',
+        component: AttributeDirectiveComponent
     }
 ];
