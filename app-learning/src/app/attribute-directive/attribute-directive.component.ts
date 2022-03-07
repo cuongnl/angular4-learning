@@ -12,4 +12,8 @@ export class AttributeDirectiveComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  classExpr = "my-class-1 my-class-2 my-class-3";
+
+  styleExpr = 'width: 200px; height:200px; border: 1px solid red;';
+
 }

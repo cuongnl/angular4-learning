@@ -16,6 +16,7 @@ import { ComponentLifecycleComponent } from '../component-lifecycle/component-li
 import { NgOnChangeLifeCycleComponent } from '../ng-on-change-life-cycle/ng-on-change-life-cycle.component';
 import { StructureDirectiveComponent } from '../structure-directive/structure-directive.component';
 import { AttributeDirectiveComponent } from '../attribute-directive/attribute-directive.component';
+import { HtmlComponent } from '../html/html.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AttributeDirectiveComponent } from '../attribute-directive/attribute-di
     ComponentLifecycleComponent,
     NgOnChangeLifeCycleComponent,
     StructureDirectiveComponent, 
-    AttributeDirectiveComponent
+    AttributeDirectiveComponent,
+    HtmlComponent
 
   ],
   imports: [

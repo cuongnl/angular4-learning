@@ -1,62 +1,40 @@
-<h1>ATTRIBUTE DIRECTIVE: thay đổi cách hiển thị (style) hoặc hành vi của một DOM element/Component/Directive khác</h1>
+ <h1>ATTRIBUTE DIRECTIVE: thay đổi cách hiển thị (style) hoặc hành vi của một DOM element/Component/Directive khác</h1>
 
-<h4>------------------CLASS BINDING------------------</h4>
+ <h4>------------------CLASS BINDING------------------</h4> -->
 <h6>
     Lý thuyết<br/>
     - Cần thay đổi (thêm, xóa) một số class tùy thuộc vào một số điều kiện nào đó<br/>
-    - Là câu điều kiện<br/>
-    - Mẫu câu: *ngIf="expression"<br/>
+    - Ví dụ, nếu chúng ta đang chọn một tab nào đó để hiển thị, thì tab đó sẽ có thêm class tab-active, các tab khác sẽ không có<br/>
+    - có thể là string, array string hoặc object – nếu key nào của object là truthy thì sẽ thêm vào, nếu falsy thì sẽ xóa đi.<br/>
+    - Mẫu câu: [class]="classExpr"<br/>
 </h6>
 
 <h6>Coding</h6>
-<img src="../../assets/image/ng-if.png" class="rounded" alt="Cinque Terre">
+<img src="../../assets/image/class-attribute-directive.png" class="rounded" alt="Cinque Terre">
 
 <h6>Demo</h6>
-<button (click)="incrementAge()">Click me!</button>
-<h6>
-    name: {{user.name}}<br/>
-    age: {{user.age}}<br/>
-</h6>
-
-<div *ngIf="user.age % 2 == 0; else ageLe">
-    Năm nay tuổi bạn là chẵm
+<div [class]="classExpr">
+  <h1>demo class</h1>
 </div>
-<ng-template #ageLe>
-    Năm nay tuổi bạn là lẻ
-</ng-template>
 
 <br/><br/>
-<h4>------------------CẤU TRÚC NGFOROF------------------</h4>
-
-
+<h4>------------------STYLE BINDING------------------</h4>
 
 <h6>
     Lý thuyết<br/>
-    - là 1 property đặc biệt<br/>
-    - Là duyệt array trên template<br/>
-    - Mẫu câu: *ngFor="let item of array"<br/>
-    - Thêm, xóa, thay đổi cấu trúc cây DOM<br/>
+    - binding cho style property (inline style), lúc này chúng ta có thể sử dụng Style binding<br/>
+    - Mẫu câu: [style.property]=”expression” Với expression sẽ tính toán về các giá trị kiểu string | undefined | null<br/>
+    - cú pháp kèm theo unit: [style.property.unit]=”expression” = [style.height.%]=”containerHeight” với containerHeight = number | undefined | null
+    - pháp dạng: [style]=”styleExpr” với styleExpr là một trong các dạng:
+       + String 	"width: 100%; height: 100%"
+       + Array String 	['width', '100px']
+       <!-- + Object 	{[key: string]: string | undefined | null} như {width: '100px', height: '100px'} -->
 </h6>
 
 <h6>Coding</h6>
-<img src="../../assets/image/ng-for.png" class="rounded" alt="Cinque Terre">
+<img src="../../assets/image/style-attribute-directive.png" class="rounded" alt="Cinque Terre">
 
 <h6>Demo</h6>
-<div *ngFor="let author of authors; index as idx; count as total">
-    ({{idx}})/({{total}}): {{author.id}} - {{author.firstName}}
-    {{author.lastName}}
+<div [style]='styleExpr'>
+  <h1>demo style</h1> 
 </div>
-
-<h6>Demo NGFOROF VÀ NG-TEMPLATE</h6>
-<ng-template
-  ngFor
-  [ngForOf]="authors"
-  let-author
-  let-idx="index"
-  let-total="count"
->
-  <div>
-    ({{idx}})/({{total}}): {{author.id}} - {{author.firstName}}
-    {{author.lastName}}
-  </div>
-</ng-template>

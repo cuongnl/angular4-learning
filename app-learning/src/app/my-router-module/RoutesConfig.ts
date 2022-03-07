@@ -9,6 +9,7 @@ import { ComponentLifecycleComponent } from '../component-lifecycle/component-li
 import { ContentProjectionExcuteComponent } from '../content-projection-excute/content-projection-excute.component';
 import { StructureDirectiveComponent } from '../structure-directive/structure-directive.component';
 import { AttributeDirectiveComponent } from '../attribute-directive/attribute-directive.component';
+import { HtmlComponent } from '../html/html.component';
 
 export const RoutesConfig: Routes = [
     {
@@ -52,5 +53,9 @@ export const RoutesConfig: Routes = [
     {
         path: 'attributeDirective',
         component: AttributeDirectiveComponent
+    },
+    {
+        path: 'html',
+        component: HtmlComponent
     }
 ];
