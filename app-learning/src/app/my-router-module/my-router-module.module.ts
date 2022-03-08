@@ -17,6 +17,8 @@ import { NgOnChangeLifeCycleComponent } from '../ng-on-change-life-cycle/ng-on-c
 import { StructureDirectiveComponent } from '../structure-directive/structure-directive.component';
 import { AttributeDirectiveComponent } from '../attribute-directive/attribute-directive.component';
 import { HtmlComponent } from '../html/html.component';
+import { CssComponent } from '../css/css.component';
+import { ComponentInteractionComponent } from '../component-interaction/component-interaction.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { HtmlComponent } from '../html/html.component';
     NgOnChangeLifeCycleComponent,
     StructureDirectiveComponent, 
     AttributeDirectiveComponent,
-    HtmlComponent
+    HtmlComponent,
+    CssComponent,
+    ComponentInteractionComponent
 
   ],
   imports: [

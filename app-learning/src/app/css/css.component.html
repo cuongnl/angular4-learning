@@ -1,0 +1,2533 @@
+<p>css works!</p>
+
+<style id="wp-custom-css">
+    .anspress ol ul li,
+    .anspress ul li {
+        list-style: none !important
+    }
+
+    .lp-user-profile ol ul li,
+    .learn-press-profile-course__tab ol ul li,
+    .lp-user-profile ul li,
+    .learn-press-profile-course__tab ul li {
+        list-style: none !important
+    }
+
+    .entry ol ul li,
+    .entry ul li {
+        line-height: 1.4;
+    }
+
+    .job-description ul li {
+        list-style: none !important
+    }
+
+    .lesson-description .aligncenter {
+        display: block;
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    .lesson-description ul {
+        list-style: initial !important;
+        list-style-type: circle !important;
+    }
+
+    .lesson-description ol {
+        list-style-type: number !important;
+        padding-top: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.2
+    }
+
+    .course-description h1,
+    lesson-description h1 {
+        line-height: 1.5em;
+        font-size: 1.875em;
+        letter-spacing: -.7px
+    }
+
+    .course-description h2,
+    .lesson-description h2 {
+        line-height: 1.5em;
+        font-size: 1.625em;
+        letter-spacing: -.5px
+    }
+
+    .course-description h3,
+    .course-description h4,
+    .lesson-description h3,
+    .lesson-description h4 {
+        line-height: 1.5em;
+        letter-spacing: -.3px
+    }
+
+    .course-description h4,
+    .lesson-description h3 {
+        font-size: 1.5em
+    }
+
+    .course-description h4,
+    .lesson-description h4 {
+        font-size: 1.375em
+    }
+
+    .course-description h5,
+    .lesson-description h5 {
+        line-height: 1.5em;
+        font-size: 1.125em
+    }
+
+    .course-description h6,
+    .lesson-description h6 {
+        line-height: 1.5em;
+        font-size: 1em;
+        text-transform: uppercase
+    }
+
+    .lamp th {
+        vertical-align: center
+    }
+
+    .w3-bordered tr,
+    .w3-table-all tr {
+        border-bottom: 1px solid #ddd
+    }
+
+    .w3-striped tbody tr:nth-child(even) {
+        background-color: #f1f1f1
+    }
+
+    .w3-table-all tr:nth-child(odd) {
+        background-color: #fff
+    }
+
+    .w3-table-all tr:nth-child(even) {
+        background-color: #f1f1f1
+    }
+
+    .w3-hoverable tbody tr {
+        transition: background-color .25s ease
+    }
+
+    .w3-hoverable tbody tr:hover {
+        background-color: #ccc
+    }
+
+    .w3-centered tr td,
+    .w3-centered tr th {
+        text-align: center
+    }
+
+    .w3-table td,
+    .w3-table th,
+    .w3-table-all td,
+    .w3-table-all th {
+        border: 1px solid #000;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top
+    }
+
+    .w3-table td:first-child,
+    .w3-table th:first-child,
+    .w3-table-all td:first-child,
+    .w3-table-all th:first-child {
+        padding-left: 16px
+    }
+
+    .w3-btn {
+        border: none;
+        display: inline-block;
+        outline: 0;
+        padding: 6px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none !important;
+        color: #fff;
+        background-color: #4caf50;
+        text-align: center;
+        transition: .2s ease-out;
+        cursor: pointer;
+        white-space: nowrap
+    }
+
+    .w3-btn-floating-large.w3-disabled,
+    .w3-btn-floating-large:disabled,
+    .w3-btn-floating.w3-disabled,
+    .w3-btn-floating:disabled,
+    .w3-btn.w3-disabled,
+    .w3-btn:disabled {
+        cursor: not-allowed;
+        opacity: .3
+    }
+
+    .w3-btn-floating.w3-disabled *,
+    .w3-btn-floating:disabled *,
+    .w3-btn.w3-disabled *,
+    .w3-btn:disabled * {
+        pointer-events: none
+    }
+
+    .w3-btn-floating-large.w3-disabled:hover,
+    .w3-btn-floating-large:disabled:hover,
+    .w3-btn-floating.w3-disabled:hover,
+    .w3-btn-floating:disabled:hover,
+    .w3-btn.w3-disabled:hover,
+    .w3-btn:disabled:hover {
+        box-shadow: none
+    }
+
+    .w3-btn-floating-large:hover,
+    .w3-btn-floating:hover,
+    .w3-btn:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+    }
+
+    .w3-btn-floating,
+    .w3-btn-floating-large {
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        padding: 0;
+        border-radius: 50%;
+        transition: .3s;
+        cursor: pointer;
+        font-size: 24px
+    }
+
+    .w3-btn-floating {
+        width: 40px;
+        height: 40px;
+        line-height: 40px
+    }
+
+    .w3-btn-floating-large {
+        width: 56px;
+        height: 56px;
+        line-height: 56px
+    }
+
+    .w3-btn-group .w3-btn {
+        float: left
+    }
+
+    .w3-btn.w3-ripple {
+        position: relative
+    }
+
+    .w3-ripple:after {
+        content: "";
+        background: #90ee90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all .8s
+    }
+
+    .w3-ripple:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+
+    .w3-badge,
+    .w3-sign,
+    .w3-tag {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 700;
+        text-align: center
+    }
+
+    .w3-badge {
+        border-radius: 50%
+    }
+
+    .w3-blockquote {
+        margin: 0;
+        padding: .01em 16px;
+        border-left: 5px solid #ccc;
+        font-style: italic
+    }
+
+    ul.w3-ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+
+    ul.w3-ul li {
+        padding: 6px 2px 6px 16px;
+        border-bottom: 1px solid #ddd
+    }
+
+    ul.w3-ul li:last-child {
+        border-bottom: none
+    }
+
+    .w3-image,
+    .w3-tooltip {
+        position: relative
+    }
+
+    .w3-image img,
+    img.w3-image {
+        max-width: 100%;
+        height: auto
+    }
+
+    .w3-image .w3-title {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        color: #fff;
+        font-size: 20px
+    }
+
+    .w3-fluid {
+        max-width: 100%;
+        height: auto
+    }
+
+    .w3-tooltip .w3-text {
+        display: none
+    }
+
+    .w3-tooltip:hover .w3-text {
+        display: inline-block
+    }
+
+    .w3-topnav {
+        padding: 8px 8px
+    }
+
+    .w3-dropdown-content a,
+    .w3-dropnav a,
+    .w3-sidenav a,
+    .w3-topnav a {
+        text-decoration: none !important
+    }
+
+    .w3-topnav a {
+        padding: 0 8px;
+        border-bottom: 3px solid transparent;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease
+    }
+
+    .w3-topnav a:hover {
+        border-bottom: 3px solid #fff
+    }
+
+    .w3-topnav .w3-dropdown-hover a {
+        border-bottom: 0
+    }
+
+    .w3-closenav,
+    .w3-opennav {
+        color: inherit
+    }
+
+    .w3-closenav:hover,
+    .w3-opennav:hover {
+        cursor: pointer;
+        opacity: .8
+    }
+
+    .w3-sidenav {
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed !important;
+        z-index: 1;
+        overflow: auto
+    }
+
+    .w3-sidenav a {
+        padding: 4px 2px 4px 16px
+    }
+
+    .w3-sidenav a:focus,
+    .w3-sidenav a:hover {
+        background-color: #ccc
+    }
+
+    .w3-dropnav a,
+    .w3-sidenav a {
+        display: block;
+        transition: .3s
+    }
+
+    .w3-dropnav {
+        background-color: #fff
+    }
+
+    .w3-dropnav a:hover {
+        text-decoration: underline !important
+    }
+
+    .w3-tab div {
+        display: none
+    }
+
+    .w3-tab div:target {
+        display: block
+    }
+
+    .w3-modal {
+        z-index: 1;
+        display: none;
+        padding-top: 100px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #000;
+        background-color: rgba(0, 0, 0, .4)
+    }
+
+    .w3-modal:target {
+        display: block
+    }
+
+    .w3-modal-content {
+        margin: auto;
+        background-color: #fff;
+        position: relative;
+        padding: 0;
+        outline: 0;
+        width: 600px
+    }
+
+    .w3-closebtn {
+        text-decoration: none;
+        float: right;
+        font-size: 24px;
+        font-weight: 700;
+        color: inherit
+    }
+
+    .w3-closebtn:focus,
+    .w3-closebtn:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer
+    }
+
+    .w3-pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0
+    }
+
+    .w3-pagination li {
+        display: inline
+    }
+
+    .w3-pagination li a {
+        text-decoration: none;
+        color: #000;
+        float: left;
+        padding: 8px 16px;
+        transition: background-color .3s
+    }
+
+    .w3-pagination li a:focus,
+    .w3-pagination li a:hover {
+        background-color: #ccc
+    }
+
+    .w3-group,
+    .w3-input-group {
+        margin-top: 24px;
+        margin-bottom: 24px
+    }
+
+    .w3-input {
+        padding: 8px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid grey;
+        width: 100%
+    }
+
+    .w3-label {
+        color: #009688
+    }
+
+    .w3-input:not(:valid)~.w3-validate {
+        color: #f44336
+    }
+
+    .w3-select {
+        padding: 4px 0;
+        width: 100%;
+        color: #000;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #009688
+    }
+
+    .w3-select select:focus {
+        color: #000;
+        border: 1px solid #009688
+    }
+
+    .w3-select option[disabled] {
+        color: #009688
+    }
+
+    .w3-dropdown-click,
+    .w3-dropdown-hover {
+        position: relative;
+        display: inline-block;
+        cursor: pointer
+    }
+
+    .w3-dropdown-hover:hover .w3-dropdown-content {
+        display: block;
+        z-index: 1
+    }
+
+    .w3-dropdown-content {
+        background-color: #fff;
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        margin: 0;
+        padding: 0
+    }
+
+    .w3-dropdown-content a {
+        padding: 6px 16px;
+        display: block
+    }
+
+    .w3-dropdown-content a:hover {
+        background-color: #ccc
+    }
+
+    input[type=checkbox].w3-check,
+    input[type=radio].w3-radio {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 6px
+    }
+
+    input[type=checkbox].w3-check:checked+.w3-validate,
+    input[type=radio].w3-radio:checked+.w3-validate {
+        color: #009688
+    }
+
+    input[type=checkbox].w3-check:disabled+.w3-validate,
+    input[type=radio].w3-radio:disabled+.w3-validate {
+        color: #aaa
+    }
+
+    .w3-responsive {
+        overflow-x: auto
+    }
+
+    .w3-btn-group:after,
+    .w3-btn-group:before,
+    .w3-clear:after,
+    .w3-container:after,
+    .w3-row-padding:after,
+    .w3-row:after,
+    .w3-topnav:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .w3-col,
+    .w3-half,
+    .w3-quarter,
+    .w3-third,
+    .w3-twothird {
+        float: left;
+        width: 100%
+    }
+
+    .w3-col.s1 {
+        width: 8.33333%
+    }
+
+    .w3-col.s2 {
+        width: 16.66666%
+    }
+
+    .w3-col.s3 {
+        width: 24.99999%
+    }
+
+    .w3-col.s4 {
+        width: 33.33333%
+    }
+
+    .w3-col.s5 {
+        width: 41.66666%
+    }
+
+    .w3-col.s6 {
+        width: 49.99999%
+    }
+
+    .w3-col.s7 {
+        width: 58.33333%
+    }
+
+    .w3-col.s8 {
+        width: 66.66666%
+    }
+
+    .w3-col.s9 {
+        width: 74.99999%
+    }
+
+    .w3-col.s10 {
+        width: 83.33333%
+    }
+
+    .w3-col.s11 {
+        width: 91.66666%
+    }
+
+    .w3-col.s12,
+    .w3-half,
+    .w3-quarter,
+    .w3-third,
+    .w3-twothird {
+        width: 99.99999%
+    }
+
+    .w3-text-amber {
+        color: #ffc107 !important
+    }
+
+    .w3-amber {
+        color: #000 !important;
+        background-color: #ffc107 !important
+    }
+
+    .w3-text-aqua {
+        color: #0ff !important
+    }
+
+    .w3-aqua {
+        color: #000 !important;
+        background-color: #0ff !important
+    }
+
+    .w3-text-blue {
+        color: #2196f3 !important
+    }
+
+    .w3-blue {
+        color: #fff !important;
+        background-color: #2196f3 !important
+    }
+
+    .w3-text-light-blue {
+        color: #87ceeb !important
+    }
+
+    .w3-light-blue {
+        color: #000 !important;
+        background-color: #87ceeb !important
+    }
+
+    .w3-text-brown {
+        color: #795548 !important
+    }
+
+    .w3-brown {
+        color: #fff !important;
+        background-color: #795548 !important
+    }
+
+    .w3-text-cyan {
+        color: #00bcd4 !important
+    }
+
+    .w3-cyan {
+        color: #000 !important;
+        background-color: #00bcd4 !important
+    }
+
+    .w3-text-blue-grey {
+        color: #607d8b !important
+    }
+
+    .w3-blue-grey {
+        color: #fff !important;
+        background-color: #607d8b !important
+    }
+
+    .w3-text-green {
+        color: #4caf50 !important
+    }
+
+    .w3-green {
+        color: #fff !important;
+        background-color: #4caf50 !important
+    }
+
+    .w3-text-light-green {
+        color: #8bc34a !important
+    }
+
+    .w3-light-green {
+        color: #000 !important;
+        background-color: #8bc34a !important
+    }
+
+    .w3-text-indigo {
+        color: #3f51b5 !important
+    }
+
+    .w3-indigo {
+        color: #fff !important;
+        background-color: #3f51b5 !important
+    }
+
+    .w3-text-khaki {
+        color: #b4aa50 !important
+    }
+
+    .w3-khaki {
+        color: #000 !important;
+        background-color: khaki !important
+    }
+
+    .w3-text-lime {
+        color: #cddc39 !important
+    }
+
+    .w3-lime {
+        color: #000 !important;
+        background-color: #cddc39 !important
+    }
+
+    .w3-text-orange {
+        color: #ff9800 !important
+    }
+
+    .w3-orange {
+        color: #000 !important;
+        background-color: #ff9800 !important
+    }
+
+    .w3-text-deep-orange {
+        color: #ff5722 !important
+    }
+
+    .w3-deep-orange {
+        color: #fff !important;
+        background-color: #ff5722 !important
+    }
+
+    .w3-text-pink {
+        color: #e91e63 !important
+    }
+
+    .w3-pink {
+        color: #fff !important;
+        background-color: #e91e63 !important
+    }
+
+    .w3-text-purple {
+        color: #9c27b0 !important
+    }
+
+    .w3-purple {
+        color: #fff !important;
+        background-color: #9c27b0 !important
+    }
+
+    .w3-text-deep-purple {
+        color: #673ab7 !important
+    }
+
+    .w3-deep-purple {
+        color: #fff !important;
+        background-color: #673ab7 !important
+    }
+
+    .w3-text-red {
+        color: #f44336 !important
+    }
+
+    .w3-red {
+        color: #fff !important;
+        background-color: #f44336 !important
+    }
+
+    .w3-text-sand {
+        color: #fdf5e6 !important
+    }
+
+    .w3-sand {
+        color: #000 !important;
+        background-color: #fdf5e6 !important
+    }
+
+    .w3-text-teal {
+        color: #009688 !important
+    }
+
+    .w3-teal {
+        color: #fff !important;
+        background-color: #009688 !important
+    }
+
+    .w3-text-yellow {
+        color: #d2be0e !important
+    }
+
+    .w3-yellow {
+        color: #000 !important;
+        background-color: #ffeb3b !important
+    }
+
+    .w3-text-white {
+        color: #fff !important
+    }
+
+    .w3-white {
+        color: #000 !important;
+        background-color: #fff !important
+    }
+
+    .w3-text-black {
+        color: #000 !important
+    }
+
+    .w3-black {
+        color: #fff !important;
+        background-color: #000 !important
+    }
+
+    .w3-text-grey {
+        color: #757575 !important
+    }
+
+    .w3-grey {
+        color: #000 !important;
+        background-color: #9e9e9e !important
+    }
+
+    .w3-text-light-grey {
+        color: #f1f1f1 !important
+    }
+
+    .w3-light-grey {
+        color: #000;
+        background-color: #f1f1f1 !important
+    }
+
+    .w3-text-dark-grey {
+        color: #3a3a3a !important
+    }
+
+    .w3-dark-grey {
+        color: #fff;
+        background-color: #616161 !important
+    }
+
+    .w3-opacity {
+        opacity: .6
+    }
+
+    .w3-text-shadow {
+        text-shadow: 1px 1px 0 #444
+    }
+
+    .w3-text-shadow-white {
+        text-shadow: 1px 1px 0 #ddd
+    }
+
+    .w3-info,
+    .w3-note,
+    .w3-warning {
+        padding: .01em 16px;
+        border-left: 6px solid;
+        margin: 20px 0
+    }
+
+    .w3-note {
+        background-color: #ffc;
+        border-color: #ffeb3b
+    }
+
+    .w3-warning {
+        background-color: #fdd;
+        border-color: #f44336
+    }
+
+    .w3-info {
+        background-color: #dfd;
+        border-color: #4caf50
+    }
+
+    .w3-note:after,
+    .w3-warning:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .highCOM {
+        color: green
+    }
+
+    .highELE {
+        color: brown
+    }
+
+    .highATT {
+        color: #dc143c
+    }
+
+    .highATT {
+        color: red
+    }
+
+    .highVAL {
+        color: #0000cd
+    }
+
+    .highGLB {
+        color: #c90
+    }
+
+    .highGT,
+    .highLT {
+        color: #00f
+    }
+
+    span.marked {
+        color: #e80000;
+        background-color: transparent
+    }
+
+    span.deprecated {
+        color: #e80000;
+        background-color: transparent
+    }
+
+    p.intro {
+        font-size: 16px
+    }
+
+    div.tutintro {
+        width: auto;
+        min-height: 132px
+    }
+
+    div.tutintro img {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px
+    }
+
+    div.tutintro p {
+        margin-top: 0;
+        font-size: 16px
+    }
+
+    code {
+        font-size: 105%;
+        color: #dc143c;
+        padding: 1px 4px
+    }
+
+    .html5badge {
+        background-image: url(https://timoday.edu.vn/wp-content/uploads/2016/07/html5_badge20.png);
+        background-repeat: no-repeat;
+        background-position: right
+    }
+
+    .notsupported,
+    .notsupported:active,
+    .notsupported:hover,
+    .notsupported:link,
+    .notsupported:visited {
+        color: #c58080
+    }
+
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        padding: .5em;
+        color: #000
+    }
+
+    .hljs-comment,
+    .hljs-quote,
+    .hljs-variable {
+        color: green
+    }
+
+    .hljs-built_in,
+    .hljs-keyword,
+    .hljs-name,
+    .hljs-selector-tag,
+    .hljs-tag {
+        color: #00f
+    }
+
+    .hljs-addition,
+    .hljs-attribute,
+    .hljs-literal,
+    .hljs-section,
+    .hljs-string,
+    .hljs-template-tag,
+    .hljs-template-variable,
+    .hljs-title,
+    .hljs-type {
+        color: #a31515
+    }
+
+    .hljs-deletion,
+    .hljs-meta,
+    .hljs-selector-attr,
+    .hljs-selector-pseudo {
+        color: #2b91af
+    }
+
+    .hljs-doctag {
+        color: grey
+    }
+
+    .hljs-attr {
+        color: red
+    }
+
+    .hljs-bullet,
+    .hljs-link,
+    .hljs-symbol {
+        color: #00b0e8
+    }
+
+    .hljs-emphasis {
+        font-style: italic
+    }
+
+    .hljs-strong {
+        font-weight: 700
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden
+    }
+
+    .video-container embed,
+    .video-container iframe,
+    .video-container object {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+</style>
+
+
+<p>Chức năng để thiết lập màu sắc và độ trong suốt của văn bản</p>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>color</td>
+            <td>Đặt màu sắc cho đoạn văn bản</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>opacity</td>
+            <td>Đặt mức độ trong suốt cho một phần tử nào đó</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<p>Chức ănng thiết lập các thuộc tính màu nền và đường biên cho các đối tượng trên trang.</p>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>background</td>
+            <td>Một thuộc tính viết tắt để đặt thuộc tính nền trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>background-attachment</td>
+            <td>Đặt một ảnh nền để cố định hoặc&nbsp;cuộn với phần còn lại của trang</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>background-blend-mode</td>
+            <td>Chỉ định các chế độ trộn của mỗi lớp nền(màu sắc/hình ảnh)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>background-color</td>
+            <td>Chỉ định màu nền của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>background-image</td>
+            <td>Chỉ định một hoặc nhiều hình ảnh nền cho một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>background-position</td>
+            <td>Chỉ định vị trí của hình ảnh nền</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>background-repeat</td>
+            <td>Thiết lập như thế nào một ảnh nền sẽ được lặp đi lặp lại</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>background-clip</td>
+            <td>Chỉ định khu vực để sơn màu nền</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>background-origin</td>
+            <td>Chỉ định nơi các hình nền được định vị</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>background-size</td>
+            <td>Chỉ định kích thước của ảnh nền</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>Thiết lập tất cả các thuộc tính đường viền trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-bottom</td>
+            <td>Thiết lập tất cả các thuộc tính đường viền dưới trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-bottom-color</td>
+            <td>Thiết lập màu của đường viền dưới</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-bottom-left-radius</td>
+            <td>Xác định hình dạng của các đường viền&nbsp;góc dưới bên trái</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>border-bottom-right-radius</td>
+            <td>Xác định hình dạng của các đường viền&nbsp;góc dưới bên phải</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>border-bottom-style</td>
+            <td>Thiết lập kiểu (style) của đường viền dưới</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-bottom-width</td>
+            <td>Thiết lập độ rộng của đường viền dưới</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-color</td>
+            <td>Thiết lập màu sắc của bốn đường viền</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-image</td>
+            <td>Một thuộc tính viết tắt để thiết lập tất cả các thuộc tính&nbsp;border-image-*</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>border-image-outset</td>
+            <td>Chỉ định giá trị khu vực ảnh viền vượt ra ngoài vùng giới hạn của vùng bao</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>border-image-repeat</td>
+            <td>Chỉ định ảnh viền nên được lặp đi lặp lại, tròn hoặc kéo dài</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>border-image-slice</td>
+            <td>Chỉ định cụ thể như thế nào để cắt ảnh viền</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>border-image-source</td>
+            <td>Chỉ định đường dẫn tới hình ảnh để sử dụng như đường viền</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>border-image-width</td>
+            <td>Chỉ định độ rộng của ảnh-viền</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>border-left</td>
+            <td>Thiết lập tất cả thuộc tính đường viền trái trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-left-color</td>
+            <td>Thiết lập màu sắc của đường viền trái</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-left-style</td>
+            <td>Thiết lập kiểu ( style) của đường viền trái</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-left-width</td>
+            <td>Thiết lập độ rộng của đường viền trái</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-radius</td>
+            <td>Thuộc tính viết tắt để thiết lập tất cả bốn đường viền-*-thuộc tính radius(bán kính)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>border-right</td>
+            <td>Thiết lập thuộc tính đường viền phải trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-right-color</td>
+            <td>Thiết lập màu sắc cho đường viền phải</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-right-style</td>
+            <td>Thiết lập kiểu&nbsp;(style) cho đường viền phải</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-right-width</td>
+            <td>Thiết lập độ rộng cho đường viền phải</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-style</td>
+            <td>Thiết lập kiểu&nbsp;(style) &nbsp;cho bốn đường viền</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-top</td>
+            <td>Thiết lập thuộc tính đường viền trên trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-top-color</td>
+            <td>Thiết lập màu sắc cho đường viền trên</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-top-left-radius</td>
+            <td>Xác định hình dạng của đường viền góc trên bên&nbsp;trái</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>border-top-right-radius</td>
+            <td>Xác định hình dạng của đường viền góc trên bên phải</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>border-top-style</td>
+            <td>Thiết lập kiểu&nbsp;(style) cho đường viền trên</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>border-top-width</td>
+            <td>Thiết lập độ rộng của đường viền trên</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>border-width</td>
+            <td>Thiết lập độ rộng của bốn đường viền</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>box-decoration-break</td>
+            <td>Thiết lập dáng vẻ của hình nền và đường viền của một phần tử &nbsp;tại trang ngắt, hoặc đối với phần tử
+                in-line , tại&nbsp;&nbsp;dòng ngắt.</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>box-shadow</td>
+            <td>Gắn một hoặc nhiều đổ bóng (drop-shadows) vào hộp</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Basic_Box"><a id="basic">Các
+            thuộc tính Basic Box</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>bottom</td>
+            <td>Xác định vị trí cuối của phần tử<strong>&nbsp;position</strong> (vị trí)</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>clear</td>
+            <td>Xác định hai bên của phần tử (left,right) nơi mà phần tử <strong>float</strong> không được cho phép
+                (ngăn cản thành phần không được float trái, phải hay cả hai)</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>clip</td>
+            <td>Xác định đoạn cho phần tử&nbsp;khi sử dụng thuộc tính <strong>position</strong> có giá trị
+                “<em>absolute</em>“</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>display</td>
+            <td>Chỉ định làm thế nào một phần tử HTML nào đó sẽ được hiển thị</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>Xác định có hay không một&nbsp;box&nbsp;được float(trôi nổi)</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>height</td>
+            <td>Thiết lập chiều cao của thành phần</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td>Xác định vị trí bên trái của phần tử <strong>position</strong></td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>margin</td>
+            <td>Thiết lập thuộc tính margin (căn lề cho phần tử)&nbsp;trong một thông báo</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>margin-bottom</td>
+            <td>Thiết lập lề dưới của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>margin-left</td>
+            <td>Thiết lập lề trái của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>margin-right</td>
+            <td>Thiết lập lề phải của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>margin-top</td>
+            <td>Thiết lập lề trên của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>max-height</td>
+            <td>Thiết lập chiều cao tối đa của một phần tử</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>max-width</td>
+            <td>Thiết lập chiều rộng tối đa của một phần tử</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>min-height</td>
+            <td>Thiết lập chiều cao tối thiểu của một phần tử</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>min-width</td>
+            <td>Thiết lập chiều rộng tối thiểu của một phần tử</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>overflow</td>
+            <td>Chỉ định những gì sẽ xảy ra nếu nội dung tràn ra ngoài phần tử hộp</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>overflow-x</td>
+            <td>Xác định có hay không để cắt cạnh trái/phải của đoạn văn bản, nếu nó tràn ra khỏi khu vực nội dung của
+                phần tử</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>overflow-y</td>
+            <td>Xác định có hay không để cắt cạnh trên /dưới của đoạn văn bản, nếu nó tràn ra khỏi khu vực nội dung của
+                phần tử</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>padding</td>
+            <td>Thiết lập lại thuộc tính padding (vùng đệm)&nbsp;trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>padding-bottom</td>
+            <td>Thiết lập vùng đệm dưới của phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>padding-left</td>
+            <td>Thiết lập vùng đệm trái của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>padding-right</td>
+            <td>Thiết lập vùng đệm phải của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>padding-top</td>
+            <td>Thiết lập vùng đệm trên của một phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>position</td>
+            <td>Xác định kiểu của phương thức định vị được sử dụng cho một phần tử (static, relative, absolute or fixed)
+            </td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>right</td>
+            <td>Xác định vị trí phải của phần tử position</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>top</td>
+            <td>Xác định vị trí trên của phần tử position</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>visibility</td>
+            <td>Xác định có hay không một phần tử có thể nhìn thấy được</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>Thiết lập độ rộng của phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>vertical-align</td>
+            <td>Sắp xếp nội dung theo chiều dọc của phần tử</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>z-index</td>
+            <td>Thiết lập thứ tự xếp chồng nhau của phần tử position</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Thuoc_tinh_cho_bo_cuc_Flexible_Box"><a
+            id="flexible">Thuộc tính cho bố cục Flexible Box</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>align-content</td>
+            <td>Xác định sự căn chỉnh giữa các dòng bên trong một khối linh hoạt ( flexible container) khi các mục không
+                sử dụng các khoảng cách&nbsp;có sẵn</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>align-items</td>
+            <td>Xác định sự căn chỉnh cho các mục bên trong một khối linh hoạt ( flexible container)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>align-self</td>
+            <td>Xác định sự căn chỉnh cho các mục được chọn bên trong một khối linh hoạt&nbsp;( flexible container)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>flex</td>
+            <td>Xác định độ dài của các mục, tương đối với phần còn lại</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>flex-basis</td>
+            <td>Xác định độ dài ban đầu của một mục linh hoạt (flexible item)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>flex-direction</td>
+            <td>Xác định hướng của các mục linh hoạt (flexible items)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>flex-flow</td>
+            <td>Một thuộc tính viết tắt cho thuộc tính flex-direction và&nbsp;flex-wrap</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>flex-grow</td>
+            <td>Chỉ định bao nhiêu mục sẽ tăng tương đối so với phần còn lại</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>flex-shrink</td>
+            <td>Chỉ định bao nhiêu mục sẽ giảm tương đối so với phần còn lại</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>flex-wrap</td>
+            <td>Chỉ định liệu các mục linh hoạt (flexible items) nên bọc hay không</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>justify-content</td>
+            <td>Xác định sự căn chỉnh giữa các mục bên trong một khối linh hoạt (flexible container) khi các mục không
+                sử dụng tất cả các khoảng cách&nbsp;có sẵn</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>order</td>
+            <td>Thiết lập thứ tự của các mục linh hoạt&nbsp;(flexible items), tương đối so với phần còn lại</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Text"><a id="text">Các thuộc
+            tính Text</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>hanging-punctuation</td>
+            <td>Xác định ký tự chấm câu có thể được đặt ở ngoài đường hộp</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>hyphens</td>
+            <td>Thiết lập làm thế nào tách từ để cải thiện cách bố trí của đoạn văn</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>letter-spacing</td>
+            <td>Tăng hoặc giảm khoảng cách giữa các ký tự trong một văn bản</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>line-break</td>
+            <td>Xác định cách ngắt dòng</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>line-height</td>
+            <td>Thiết lập chiều cao của dòng</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>overflow-wrap</td>
+            <td>Xác định có hay không trình duyệt có thể ngắt dòng trong các từ để ngăn cản việc tràn (Khi một chuỗi quá
+                dài để phù hợp với hộp chứa nó</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>tab-size</td>
+            <td>Xác định chiều dài của các kí tự tab</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>Xác định căn chỉnh nội dung theo chiều ngang</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>text-align-last</td>
+            <td>Mô tả cách dòng cuối cùng của mộtđoạn&nbsp;hoặc một dòng ngay trước khi một ngắt dòng là căn chỉnh khi
+                text-align là “justify”</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>text-combine-upright</td>
+            <td>Xác định sự kết hợp của đa ký tự vào khoảng cách của một ký tự đơn</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>text-indent</td>
+            <td>Xác định rõ sự thụt dòng đầu tiên trong một khối văn bản</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>text-justify</td>
+            <td>Xác định phương pháp căn lề thẳng hàng hai bên sử dụng khi text-align là “justify”</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>text-transform</td>
+            <td>Điều khiển các chữ in hoa</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>white-space</td>
+            <td>Xác định cách mà khoảng trắng bên trong một phần tử được xử lý</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>word-break</td>
+            <td>Xác định quy tắc ngắt dòng đối với scripts non-CJK</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>word-spacing</td>
+            <td>Tăng hoặc giảm khoảng cách giữa các từ trong đoạn văn</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>word-wrap</td>
+            <td>Cho phép dài, những từ dài được xuống hàng mà không&nbsp;làm vỡ layout</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Text_Decoration"><a
+            id="textdecor">Các thuộc tính Text Decoration</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>text-decoration</td>
+            <td>Xác định các trang trí thêm vào văn bản</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>text-decoration-color</td>
+            <td>Xác định màu của&nbsp;văn bản trang trí (text-decoration)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>text-decoration-line</td>
+            <td>Xác định loại của dòng trong&nbsp;text-decoration</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>text-decoration-style</td>
+            <td>Xác định kiểu của các dòng trong một văn bản trang trí</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>text-shadow</td>
+            <td>Thêm đổ bóng cho văn bản</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>text-underline-position</td>
+            <td>Xác định vị trí của các gạch dưới được&nbsp;thiết lập bằng cách sử dụng thuộc tính text-decoration</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Font"><a id="font">Các thuộc
+            tính Font</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>@font-face</td>
+            <td>Một quy tắc cho phép các trang web tải và sử dụng các phông chữ khác với phông chữ “web-safe”</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>@font-feature-values</td>
+            <td>Cho phép tác giả sử dụng một tên chung trong font-variant-alternate đối với tính năng kích hoạt khác
+                nhau trong OpenType</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font</td>
+            <td>Đặt tất cả các thuộc tính font trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>font-family</td>
+            <td>Xác định họ phông chữ cho văn bản</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>font-feature-settings</td>
+            <td>Cho phép kiểm soát các tính năng về in&nbsp;tiên tiến trong OpenType fonts</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>font-kerning</td>
+            <td>Kiểm soát việc sử dụng các thông tin kerning (cách các từ cách nhau)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font-language-override</td>
+            <td>Kiểm soát việc sử dụng của ngôn ngữ cụ thể nét trạm (language-specific glyphs)&nbsp;trong kiểu chữ</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>font-size</td>
+            <td>Xác định kích thước phông chữ của đoạn văn</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>font-size-adjust</td>
+            <td>Duy trì khả năng&nbsp;đọc văn bản khi phông chữ dự phòng&nbsp;xuất hiện</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>font-stretch</td>
+            <td>Chọn kiểu&nbsp;normal, condensed,hoặc&nbsp;expanded từ họ phông chữ</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>Xác định kiểu chữ cho văn bản</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>font-synthesis</td>
+            <td>Quản lí các kiểu chữ&nbsp;(đậm hoặc nghiêng)&nbsp;có thể được tổng hợp bởi trình duyệt</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font-variant</td>
+            <td>Xác định có hay không một văn bản được hiển thị với phông chữ small-caps</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>font-variant-alternates</td>
+            <td>Kiểm soát việc sử dụng các nét chạm thay thế liên quan đến việc thay tên được định nghĩa trong
+                @font-feature-values</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font-variant-caps</td>
+            <td>Kiểm soát việc sử dụng nét chạm (glyph)thay thế cho chữ in hoa</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>font-variant-east-asian</td>
+            <td>Kiểm soát việc sử dụng nét chạm (glyph ) thay thế cho các kịch bản Đông Á (ví dụ như Trung Quốc và Nhật
+                Bản)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font-variant-ligatures</td>
+            <td>Kiểm soát các chữ ghép và các biểu mẫu theo ngữ cảnh được sử dụng trong các nội dung văn bản của phần tử
+                mà nó được áp dụng</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>font-variant-numeric</td>
+            <td>Kiểm soát việc sử dụng các họa tiết (glyph) thay thế cho số, phân số và đánh dấu thứ tự</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>font-variant-position</td>
+            <td>Kiểm soát việc sử dụng các họa tiết thay thế kích thước nhỏ hơn vị trí như là chỉ số trên hoặc chỉ số
+                dưới về đường cơ sở của các phông chữ</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>font-weight</td>
+            <td>Xác định độ đậm của phông chữ</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Writing_Modes"><a
+            id="writing">Các thuộc tính Writing Modes</a></span></h2>
+
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>direction</td>
+            <td>Xác định hướng văn bản/ hướng bài viết</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>text-orientation</td>
+            <td>Xác định hướng của văn bản trong một dòng</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>text-combine-upright</td>
+            <td>Xác định sự kết hợp của đa&nbsp;ký tự vào khoảng cách của ký tự đơn</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>unicode-bidi</td>
+            <td>Được sử dụng cùng với thuộc tính direction để đặt và trả về&nbsp;&nbsp;cho dù văn bản nên được ghi đè để
+                hỗ trợ nhiều ngôn ngữ trong cùng một tài liệu</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>writing-mode</td>
+            <td>&nbsp;Xác định liệu dòng văn bản được đặt ra theo chiều ngang hay chiều dọc hay hướng mà khối tiến tới
+            </td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Table"><a id="table">Các thuộc
+            tính Table</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>border-collapse</td>
+            <td>Xác định liệu có hay không đường viền của bảng nên tách biệt</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>border-spacing</td>
+            <td>Xác định khoảng cách giữa đường viền của các ô lân cận</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>caption-side</td>
+            <td>Xác định vị trí của một chú thích bảng</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>empty-cells</td>
+            <td>Xác định có hay không để hiển thị đường viền và nền trên ô trống trong một bảng</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>table-layout</td>
+            <td>Thiết lập thuật toán bố trí (layout algorithm) được sử dụng cho bảng</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Lists_va_Counters"><a
+            id="lists">Các thuộc tính Lists và Counters</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>counter-increment</td>
+            <td>Gia tăng một hoặc nhiều counters</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>counter-reset</td>
+            <td>Tạo hoặc thiết lập lại một hay nhiều&nbsp;counters</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>list-style</td>
+            <td>Thiết lập tất cả các thuộc tính cho danh sách trong lời khai báo</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>list-style-image</td>
+            <td>Xác định một hình ảnh như đánh dấu mục danh sách</td>
+            <td>1</td>
+        </tr>
+        <tr class="alt">
+            <td>list-style-position</td>
+            <td>Xác định nếu đánh danh mục sẽ xuất hiện bên trong hoặc bên ngoài nội dung</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>list-style-type</td>
+            <td>Xác định loại của đánh dấu danh mục</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Animation"><a
+            id="animation">Các thuộc tính Animation</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>@keyframes</td>
+            <td>Xác định mã <strong>animation&nbsp;</strong></td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>animation</td>
+            <td>Một thuộc tính viết tắt cho các thuộc tính<strong> animation</strong> &nbsp;(ngoại trừ
+                animation-play-state và animation-fill-mode)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>animation-delay</td>
+            <td>Xác định sự chậm trễ&nbsp;đối với&nbsp;sự bắt đầu của một&nbsp;chuyển&nbsp;động của hình ảnh hoặc tag
+                (animation)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>animation-direction</td>
+            <td>Xác định có hay không các chuyển động nên chạy ngược lại trên chu kỳ thay thế</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>animation-duration</td>
+            <td>Xác định có bao nhiêu giây hoặc mili giây một chuyển động cần để hoàn thành một chu kỳ</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>animation-fill-mode</td>
+            <td>Xác định kiểu cho các phần tử khi các chuyển động không chạy (Khi nó dừng lại , hoặc khi nó bị trễ)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>animation-iteration-count</td>
+            <td>Xác định số lần một chuyển động được thực hiện</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>animation-name</td>
+            <td>Xác định tên của&nbsp;@keyframes animation</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>animation-play-state</td>
+            <td>Xác định xem các chuyển động đang được chạy hay tạm dừng</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>animation-timing-function</td>
+            <td>Xác định tốc độ cong của một chuyển động của hình ảnh hoặc tag</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Transform"><a
+            id="transform">Các thuộc tính Transform</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>backface-visibility</td>
+            <td>Xác định có hay không một phần tử nên được nhìn thấy khi không ở chế độ toàn màn hình</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>perspective</td>
+            <td>Xác định chiều sâu</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>perspective-origin</td>
+            <td>Xác định vị trí dưới của phần tử 3D</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>transform</td>
+            <td>Áp dụng một chuyển đổi &nbsp;2D hoặc 3D đến một phần tử</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>transform-origin</td>
+            <td>Cho phép bạn thay đổi vị trí trên phần tử <strong>transform</strong></td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>transform-style</td>
+            <td>Xác định các phần tử lồng nhau sẽ thế nào trong không gian 3D</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Transitions"><a
+            id="transitions">Các thuộc tính Transitions</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>transition</td>
+            <td>Một thuộc tính viết tắt để thiết lập cho 4 thuộc tính chuyển đổi</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>transition-property</td>
+            <td>Xác định tên của thuộc tính CSS trong hiệu ứng của quá trình chuyển đổi(none, width, height, all)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>transition-duration</td>
+            <td>Xác định&nbsp;bao nhiêu giây hoặc mili giây một hiệu ứng chuyển đổi hoàn thành</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>transition-timing-function</td>
+            <td>Xác định đường cong tốc độ của hiệu ứng chuyển đổi</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>transition-delay</td>
+            <td>Xác định khi nào hiệu ứng chuyển đổi sẽ bắt đầu</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Basic_User_Interface"><a
+            id="user">Các thuộc tính Basic User Interface</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mo tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>box-sizing</td>
+            <td>Báo cho trình duyệt các thuộc tính sizing (độ rộng và độ cao)&nbsp;nên có</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>content</td>
+            <td>Sử dụng với :before và&nbsp;:after pseudo-elements, để chèn nội dung được tạo ra</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>cursor</td>
+            <td>Xác định kiểu con trỏ chuột sẽ được hiển thị khi di chuyển vào phần tử nào đó</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>ime-mode</td>
+            <td>Điều khiển trạng thái của trình soạn thảo phương thức nhập cho trường văn bản</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>nav-down</td>
+            <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên xuống</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>nav-index</td>
+            <td>Xác định thứ tự tab của phần tử</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>nav-left</td>
+            <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên sang trái</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>nav-right</td>
+            <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên sang phải</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>nav-up</td>
+            <td>Xác định nơi để di chuyển khi sử dụng phím mũi tên lên</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>outline</td>
+            <td>Thiết lập thuộc tính đường viền&nbsp;trong lời khai báo</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>outline-color</td>
+            <td>Đặt màu sắc của đường viền bao ngoài</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>outline-offset</td>
+            <td>Đệm đường viền bao ngoài, và rút nó ra bên ngoài cạnh đường viền (border)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>outline-style</td>
+            <td>Thiết lập kiểu của đường viền bao ngoài</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>outline-width</td>
+            <td>Thiết lập độ rộng của đường viền bao ngoài</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>resize</td>
+            <td>Xác định có hay không một phần tử là thay đổi kích thước bởi người dùng</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>text-overflow</td>
+            <td>Xác định các vấn đề khi văn bản tràn khỏi các phần tử container</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Multi-column_Layout"><a
+            id="multicol">Các thuộc tính Multi-column Layout</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>break-after</td>
+            <td>Xác định cách xử lý&nbsp;ngắt trang, ngắt cột hoặc ngắt đoạn&nbsp;sau khi tạo hộp</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>break-before</td>
+            <td>Xác định cách xử lý&nbsp;ngắt trang, ngắt cột hoặc ngắt đoạn trước&nbsp;khi tạo hộp</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>break-inside</td>
+            <td>Xác định cách xử lý&nbsp;ngắt trang, ngắt cột hoặc ngắt đoạn bên trong hộp được tạo ra</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>column-count</td>
+            <td>Xác định số cột phần tử nên được chia thành</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>column-fill</td>
+            <td>Xác định như thế nào để điền vào cột</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>column-gap</td>
+            <td>Xác định khoảng cách giữa các cột</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>column-rule</td>
+            <td>Một thuộc tính viết tắt để thiết lập thuộc tính column-rule-* cho các đường kẻ giữa các cột</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>column-rule-color</td>
+            <td>Xác định màu sắc của các đường kẻ giữa các cột</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>column-rule-style</td>
+            <td>Xác định kiểu&nbsp;của các đường kẻ giữa các cột</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>column-rule-width</td>
+            <td>Xác định độ rộng&nbsp;của các đường kẻ giữa các cột</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>column-span</td>
+            <td>Xác định có bao nhiêu cột chứa phần tử được trải dài</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>column-width</td>
+            <td>Xác định độ rộng của cột</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>columns</td>
+            <td>Một thuộc tính viết tắt để thiết lập độ rộng cột (column-width) và số cột (column-count)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>widows</td>
+            <td>Xác định số dòng tối thiểu phải còn lại trên một trang khi ngắt trang xảy ra bên trong phần tử</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Paged_Media"><a id="paged">Paged
+            Media</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>orphans</td>
+            <td>Thiết lập số dòng tối thiểu phải còn lại ở cuối của một trang khi ngắt trang xảy ra bên trong phần tử
+            </td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>page-break-after</td>
+            <td>Thiết lập chế độ ngắt trang sau một phần tử</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>page-break-before</td>
+            <td>Thiết lập chế độ ngắt trang trước&nbsp;một phần tử</td>
+            <td>2</td>
+        </tr>
+        <tr class="alt">
+            <td>page-break-inside</td>
+            <td>Thiết lập chế độ ngắt trang bên&nbsp;trong&nbsp;một phần tử</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span
+        id="Generated_Content_cho_trang_da_phuong_tien"><a id="gencon">Generated Content cho trang đa phương
+            tiện</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>marks</td>
+            <td>Thêm đoạn văn bản được đánh dấu và/hoặc sử dụng cho tài liệu</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>quotes</td>
+            <td>Thiết lập các loại dấu bao ngoài khi nhúng một trích dẫn</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Filter_Effects"><a
+            id="filter">Các thuộc tính Filter Effects</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>filter</td>
+            <td>Xác định hiệu ứng (vd:&nbsp;làm mờ hoặc chuyển đổi màu sắc) trên một phần tử trước khi nó được hiển thị
+            </td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Image_Values_va_Replaced_Content"><a
+            id="image">Image Values và Replaced Content</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>image-orientation</td>
+            <td>Xác định sự quay theo bên phải hoặc theo chiều kim đồng hồ &nbsp;do người dùng áp dụng cho một ảnh
+                &nbsp;(Thuộc tính này có khả năng bị phản đối và chức năng của nó chuyển sang cho HTML)</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>image-rendering</td>
+            <td>Gợi ý cho các trình duyệt về các khía cạnh của một ảnh là rất quan trọng để bảo vệ khi hình ảnh được thu
+                nhỏ lại</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>image-resolution</td>
+            <td>Xác định độ phân giải nội tại của các ảnh raster được sử dụng trong/ trên phần tử</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>object-fit</td>
+            <td>Xác định làm&nbsp;thế nào nội dung của một phần tử thay thế &nbsp;nên được trang bị hộp được tạo bởi độ
+                cao và độ rộng</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>object-position</td>
+            <td>Xác định căn chỉnh&nbsp;của phần&nbsp;tử thay thế bên trong hộp của nó</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Masking"><a id="masking">Các
+            thuộc tính Masking</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>mask</td>
+            <td></td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>mask-type</td>
+            <td></td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Speech"><a id="speech">Các
+            thuộc tính Speech</a></span></h2>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr>
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr class="alt">
+            <td>mark</td>
+            <td>Một thuộc tính viết tắt để thiết lập thuộc tính &nbsp;mark-before và&nbsp;mark-after</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>mark-after</td>
+            <td>Cho phép đánh dấu tên được gắn liền với những&nbsp;dòng âm thanh</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>mark-before</td>
+            <td>Cho phép đánh dấu tên được gắn liền với những&nbsp;dòng âm thanh</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>phonemes</td>
+            <td>xác định cách phát âm cho các văn bản chứa các phần tử tương ứng</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>rest</td>
+            <td>Một thuộc tính viết tắt để thiết lập&nbsp;thuộc tính&nbsp;the rest-before và&nbsp;rest-after</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>rest-after</td>
+            <td>Xác định phần còn lại hoặc ranh giới điệu tính được quan sát sau khi nói phần tử nội dung</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>rest-before</td>
+            <td>Xác định phần còn lại hoặc ranh giới điệu tính để quan sát trước khi nói phần tử nội dung</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>voice-balance</td>
+            <td>Xác định sự cân bằng giữa các kênh trái và phải</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>voice-duration</td>
+            <td>Xác định nó phải mất bao lâu để trả lại các lựa chọn phần tử nội dung</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>voice-pitch</td>
+            <td>Xác định mức độ trung bình (tần số)&nbsp;của giọng nói</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>voice-pitch-range</td>
+            <td>Xác định sự thay đổi của tần số</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>voice-rate</td>
+            <td>Điều khiển tốc độ nói</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>voice-stress</td>
+            <td>Chỉ ra cường độ của sự nhấn mạnh được áp dụng</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>voice-volume</td>
+            <td>Đề cập đến biên độ của dạng sóng đầu ra của các bài phát biểu</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 class="fittexted_for_content_h2" style="font-size: 38.25px;"><span id="Cac_thuoc_tinh_Marquee"><a id="marquee">Các
+            thuộc tính Marquee</a></span></h2>
+<p>Chức năng tạo chữ chạy trong HTML</p>
+<table class="w3-table-all notranslate">
+    <tbody>
+        <tr class="alt">
+            <th>Thuộc tính</th>
+            <th>Mô tả</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>marquee-direction</td>
+            <td>Thiết lập hướng di chuyển nội dung</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>marquee-play-count</td>
+            <td>Thiết lập bao nhiêu lần di chuyển nội dung</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>marquee-speed</td>
+            <td>Thiết lập cách nhanh chóng cuộn nội dung</td>
+            <td>3</td>
+        </tr>
+        <tr class="alt">
+            <td>marquee-style</td>
+            <td>Thiết lập kiểu di chuyển nội dung</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>

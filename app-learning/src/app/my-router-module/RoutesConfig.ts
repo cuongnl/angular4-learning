@@ -10,6 +10,8 @@ import { ContentProjectionExcuteComponent } from '../content-projection-excute/c
 import { StructureDirectiveComponent } from '../structure-directive/structure-directive.component';
 import { AttributeDirectiveComponent } from '../attribute-directive/attribute-directive.component';
 import { HtmlComponent } from '../html/html.component';
+import { CssComponent } from '../css/css.component';
+import { ComponentInteractionComponent } from '../component-interaction/component-interaction.component';
 
 export const RoutesConfig: Routes = [
     {
@@ -57,5 +59,13 @@ export const RoutesConfig: Routes = [
     {
         path: 'html',
         component: HtmlComponent
+    },
+    {
+        path: 'css',
+        component: CssComponent
+    },
+    {
+        path: 'componentInteractionComponent',
+        component: ComponentInteractionComponent
     }
 ];
