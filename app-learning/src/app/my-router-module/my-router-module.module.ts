@@ -20,6 +20,8 @@ import { HtmlComponent } from '../html/html.component';
 import { CssComponent } from '../css/css.component';
 import { TemplateVariableViewChildViewChildrenComponent } from '../template-variable-view-child-view-children/template-variable-view-child-view-children.component';
 import { TypeScriptDataTypeComponent } from '../type-script-data-type/type-script-data-type.component';
+import { NgTemplateComponent } from '../ng-template/ng-template.component';
+
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { TypeScriptDataTypeComponent } from '../type-script-data-type/type-scrip
     HtmlComponent,
     CssComponent,
     TemplateVariableViewChildViewChildrenComponent,
-    TypeScriptDataTypeComponent
+    TypeScriptDataTypeComponent,
+    NgTemplateComponent
 
 
   ],

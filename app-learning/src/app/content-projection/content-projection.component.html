@@ -3,5 +3,36 @@
 <h2>component a</h2>
   <ng-content></ng-content>
 
+
+  <h2>
+    - sử dụng  @Input() @Output <br>
+    - để thêm các tính năng, thay đổi cấu trúc component con <br>
+    - Vấn đề: muốn thêm mới tính năng, thay đổi cấu trúc component con thì phải thay đổi source component con và chỗ gọi component 
+    - thay đổi khá nhiều component con và nơi gọi component con, gây ra bug 
+  </h2>
+  <br>
+  <h4>Coding</h4> <br>
+  <img src="../../assets/image/input-and-output.png" class="rounded" alt="Cinque Terre"> <br>
+
   <app-toggle-component header="header_1" question="question_1" content="content_1" ></app-toggle-component>
   <app-toggle-component header="header_2" question="question_2" content="content_2" [canKip]="true"></app-toggle-component>
+
+  <br>
+
+  <h2>
+    -Thêm tính năng hoặc thay đổi cấu trúc component con mà không muốn gây ảnh hưởng quá nhiều đến component con và nơi gọi nớ <br>
+    - sử dụng component projection để triếu các chức năng, cấu trúc mới vào component con  <br>
+  </h2>
+
+  <h4>Coding</h4>
+  <img src="../../assets/image/component-projection.png" class="rounded" alt="Cinque Terre"> <br>
+  <app-toggle-component-projection >
+    <h3>header_1</h3>
+    <h2 class="test-class">question_1</h2>
+    <h2 id="test-id">content_1</h2>
+  </app-toggle-component-projection>
+  <app-toggle-component-projection [canKip]="true">
+    <label>header_2</label>
+    <h2 class="test-class">question_2</h2>
+    <h2 id="test-id">content_2</h2>
+  </app-toggle-component-projection>

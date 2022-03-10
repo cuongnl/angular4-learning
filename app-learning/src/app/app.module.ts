@@ -7,9 +7,10 @@ import { CommonModule } from '@angular/common';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { ContentProjectionExcuteComponent } from './content-projection-excute/content-projection-excute.component';
 import {ToggleComponentComponent} from './toggle-component/toggle-component.component';
+import { ToggleComponentProjectionComponent } from './toggle-component-projection/toggle-component-projection.component';
 
 @NgModule({
-  declarations: [ContentProjectionComponent, ContentProjectionExcuteComponent, ToggleComponentComponent],
+  declarations: [ContentProjectionComponent, ContentProjectionExcuteComponent, ToggleComponentComponent, ToggleComponentProjectionComponent],
   imports: [
     BrowserModule,
     MyRouterModuleModule,

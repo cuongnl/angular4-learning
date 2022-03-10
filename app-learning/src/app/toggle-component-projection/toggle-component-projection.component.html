@@ -1,0 +1,19 @@
+
+<header>
+    <ng-content select="h3, label"></ng-content>
+</header>
+<div class="toggle-wrapper" [class.checked]="checked" tabindex="0" (click)="toggle()">
+    <div class="toggle"></div>
+</div>
+
+<div class="toggle-label"> 
+    <ng-content select=".test-class"></ng-content>
+</div>
+
+<div class="toggle-content">
+    <ng-content select="#test-id"></ng-content>
+</div>
+
+<div class="skip" *ngIf="canKip">
+    <button>Kip</button>
+</div>
