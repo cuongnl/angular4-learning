@@ -1,0 +1,94 @@
+<p>type-script-data-type works!</p>
+
+
+<img src="../../assets/image/typescript-graphics.png" class="rounded" alt="Cinque Terre">
+
+<h5>
+    <b>Lý thuyết</b> <br>
+    - TS cung cấp Static Types <br>
+    - JS là một ngôn ngữ mang tính chất Dynamic lên JS rất thoải mái <br>
+    &nbsp; + let john = 'John'; <br>
+    &nbsp; + john = 123; <br>
+    &nbsp; + biến john được khởi tạo là 1 chuỗi, sau đó lại được gán cho 1 số 123 <br>
+    &nbsp; + Nhìn qua thì có vẻ thoải mái, nhưng rất dễ dẫn đến những lỗi ngớ ngẩn khi phát triển phần mềm <br>
+    - Với TS, TS trước tiên sẽ tự cung cấp type cho biến john <br>
+    - một primitive type là string vì giá trị "John" là dạng chuỗi (string) <br>
+    - Khi giá trị 123 được gán cho biến john thì TS sẽ bắt lỗi tại thời điểm code được compile (Compilation Time Error) vì 123 (number) thì không thể gán cho 1 biến có type là string được. <br>
+</h5>
+<br/>
+<h5>
+    <b>default types trong TS</b> <br>
+    &nbsp; - let someString: string; <br>
+    &nbsp; - let someNumber: number; <br>
+    &nbsp; - let someBoolean: boolean; <br>
+    &nbsp; - let something: any; // có thể gán sang cho bất kỳ kiểu dữ liệu nào khác <br>
+    &nbsp; - let someStringArray: string[]; // tương tự cho number[], boolean[], any[] <br>
+    &nbsp; - let someObject: object; <br>
+    &nbsp; - let someNull: null; <br>
+    &nbsp; - let someUndefined: undefined; <br>
+    &nbsp; - let someUnknown: unknown; <br>
+    &nbsp; - let someNever: never; // ví dụ như một hàm throw exception <br>
+    &nbsp; - let someTuple: [string, number]; <br>
+    &nbsp; - let someVoidFunction: () => void; // một hàm không trả về giá trị gì sau khi thực thi <br>
+    &nbsp; - let someFunction: () => string; // một hàm trả về giá trị có type "string" sau khi thực thi <br>
+</h5>
+<br>
+<h5>
+    <b>Interface/Type</b> <br>
+    &nbsp; - cung cấp Interface và Type để định nghĩa được type cho một đối tượng (object) <br>
+    &nbsp; <img src="../../assets/image/ts_interface.png" class="rounded" alt="Cinque Terre"> <br>
+    &nbsp; - interface giống như một cái khuôn bánh, muốn bánh của mình có hình dạng như thế nào thì chúng ta sẽ sử dụng cái khuôn có hình dạng như vậy <br>
+    &nbsp; - job?: string: là Optional Property. job là một property không-bắt-buộc, nghĩa là có cũng được, không có cũng không sao <br>
+    &nbsp; - interface sẽ giúp text editor gợi ý cho object có những properties gì trên object đó <br>
+    &nbsp; - giảm thiểu việc sai lỗi chính tả khi viết code <br>
+    
+</h5>
+<br>
+<h5>
+    <b>Class</b> <br>
+    &nbsp; - class là cú pháp xuất hiện trong ES2015 hay ES6 <br>
+    &nbsp; - Trong JS, class thực chất chỉ là syntactic sugar cho Prototypal Inheritance <br>
+    <img src="../../assets/image/ts_class.png" class="rounded" alt="Cinque Terre"> <br>
+</h5>
+
+<br>
+<h5>
+    <b>Access Modifier</b> <br>
+    &nbsp; -  keywords như: public, private, và protected <br>
+    <img src="../../assets/image/ts_access_modi.png" class="rounded" alt="Cinque Terre"> <br>
+</h5>
+
+<br>
+<h5>
+    <b>Generics</b> <br>
+    &nbsp; - giúp viết code theo hướng Abstraction dễ dàng hơn, theo sát hơn SOLID Principles (SOLID) <br>
+    &nbsp; <img src="../../assets/image/ts_generics.png" class="rounded" alt="Cinque Terre"> <br>
+    &nbsp; - Cú pháp '<'T'>' chính là Generics, hay còn gọi là Type Parameter.
+</h5>
+
+<br>
+<h5>
+    <b>typeof</b> <br>
+    &nbsp; - typeof là 1 operator dùng để lấy về type của 1 biến. <br>
+    &nbsp; <img src="../../assets/image/ts_typeof.png" class="rounded" alt="Cinque Terre"> <br>
+</h5>
+<br>
+<h5>
+    <b>Union Type</b> <br>
+    &nbsp; <img src="../../assets/image/ts_unknown_type.png" class="rounded" alt="Cinque Terre"> <br>
+    &nbsp; - muốn type nào đó mà chúng ta chưa biết (unknown)  tại thời điểm viết code. <br>
+    &nbsp; - có thể nhận: string, number, boolean, array, object, và function (kể cả undefined và null) <br>
+    &nbsp; - unknown là type được giới thiệu trong TS 3.0. TS khuyến cáo sử dụng unknown thay vì any <br>
+    &nbsp; - bất cứ giá trị nào cũng có thể gán được cho unknown >> lên hạn chết dùng unknown <br>
+    &nbsp; - type or: string | number >> cho tham số hoặc giá trị trả về của hàm <br>
+</h5>
+<br>
+<h5>
+    <b>Intersection Type</b> <br>
+    &nbsp; <img src="../../assets/image/ts_unknown_type.png" class="rounded" alt="Cinque Terre"> <br>
+    &nbsp; - muốn type nào đó mà chúng ta chưa biết (unknown)  tại thời điểm viết code. <br>
+    &nbsp; - có thể nhận: string, number, boolean, array, object, và function (kể cả undefined và null) <br>
+    &nbsp; - unknown là type được giới thiệu trong TS 3.0. TS khuyến cáo sử dụng unknown thay vì any <br>
+    &nbsp; - bất cứ giá trị nào cũng có thể gán được cho unknown >> lên hạn chết dùng unknown <br>
+    &nbsp; - type or: string | number >> cho tham số hoặc giá trị trả về của hàm <br>
+</h5>

@@ -7,8 +7,10 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class TranferDataComponentAComponent implements OnInit {
 
+  //component này cần nhận vào 1 property tên là listNameChild và masterName
   @Input() listNameChild: String[];
   @Input() masterName: String;
+  
   @Output() outputSubmited = new EventEmitter<boolean>();
   @Output() tranferInputData = new EventEmitter<String>();
   varBoolean: boolean = false;

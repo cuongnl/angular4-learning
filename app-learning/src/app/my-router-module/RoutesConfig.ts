@@ -11,7 +11,8 @@ import { StructureDirectiveComponent } from '../structure-directive/structure-di
 import { AttributeDirectiveComponent } from '../attribute-directive/attribute-directive.component';
 import { HtmlComponent } from '../html/html.component';
 import { CssComponent } from '../css/css.component';
-import { ComponentInteractionComponent } from '../component-interaction/component-interaction.component';
+import { TemplateVariableViewChildViewChildrenComponent } from '../template-variable-view-child-view-children/template-variable-view-child-view-children.component';
+import { TypeScriptDataTypeComponent } from '../type-script-data-type/type-script-data-type.component';
 
 export const RoutesConfig: Routes = [
     {
@@ -65,7 +66,12 @@ export const RoutesConfig: Routes = [
         component: CssComponent
     },
     {
-        path: 'componentInteractionComponent',
-        component: ComponentInteractionComponent
+        path: 'TemplateVariable',
+        component: TemplateVariableViewChildViewChildrenComponent
+    },
+    {
+        path: 'TypeScriptDataType',
+        component: TypeScriptDataTypeComponent
     }
+    
 ];

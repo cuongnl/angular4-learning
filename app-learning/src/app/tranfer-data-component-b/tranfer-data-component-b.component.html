@@ -1,4 +1,25 @@
 <p> child component b</p>
+<h2>[(ngModel)] để thực hiện Two-way binding</h2>
 <div class="container" style="width: 99%; min-height: 200px; display: inline-block; border: 1px solid greenyellow">
-    
+    <div style="border:1px solid red">
+        <h3>
+            Lý thuyết<br />
+            - Sử dụng [(ngModel)] để thực hiện Two-way binding<br />
+            - [(ngModel)] là cách viết tắt của [ngModel]="name" (ngModelChange)="name = $event"<br />
+        </h3>
+
+        <h3>Coding</h3>
+        <img src="../../assets/image/tranfer-data-ngModel.png" style="width:100%" class="rounded" alt="Cinque Terre">
+
+        <h3>DEMO</h3>
+        <p>Your name: {{ name }}</p>
+        <input type="text" [(ngModel)]="name">
+        <input type="text" [ngModel]="name" (ngModelChange)="name = $event">
+    </div>
+    <div style="border:1px solid red">
+        <div class="toggle-wrapper" [class.checked]="checked" tabindex="0" (click)="toggle()">
+            <div class="toggle"></div>
+        </div>
+    </div>
+
 </div>

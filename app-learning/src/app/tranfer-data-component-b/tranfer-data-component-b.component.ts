@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-tranfer-data-component-b',
@@ -12,4 +12,12 @@ export class TranferDataComponentBComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name = 'Nguyễn Văn A';
+
+  @Input() checked = false;
+  @Output() checkedChange = new EventEmitter<boolean>();
+  toggle() {
+    this.checked = !this.checked;
+    this.checkedChange.emit(this.checked);
+  }
 }

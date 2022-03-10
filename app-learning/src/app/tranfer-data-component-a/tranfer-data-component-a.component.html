@@ -1,15 +1,36 @@
 <p>child component a</p>
-<div class="container" style="width: 99%; min-height: 200px; display: inline-block; border: 1px solid greenyellow;">
-    <h2> - tranfer data with @Input()</h2>
-    <h3>master name : {{masterName}}</h3> 
-    <h3 *ngFor="let item of listNameChild">list name : {{item}}</h3>
-    <br/>
-    <h3> - tranger data with @Output() : {{varBoolean}}</h3>
-    <button class="btn btn-primary" type="button" (click)="outputSubmit()">Text</button>
 
-    <br/>
-    <h3> - tranfer data input with @output() : {{tranferInputData}}</h3>
-    
-    <input type="text" class="form-control" (change)="actionTranferInputData($event.target.value)">
-    
+
+<div class="container" style="width: 99%; min-height: 200px; display: inline-block; border: 1px solid greenyellow;">
+    <h1> - tranfer data with @Input()</h1>
+    <div style="border: 1px solid red;">
+        <h3>coding</h3>
+        <img src="../../assets/image/@Input.svg" class="rounded" style="width: 100%;" alt="Cinque Terre">
+        <img src="../../assets/image/input-source.svg" class="rounded" style="width: 100%;" alt="Cinque Terre">
+        <img src="../../assets/image/tranfer-data-input.png" class="rounded" alt="Cinque Terre">
+
+        <br />
+
+        <h3>Demo</h3>
+        <h4>master name : {{masterName}}</h4>
+        <h4 *ngFor="let item of listNameChild">list name : {{item}}</h4>
+        <br />
+    </div>
+
+
+
+    <h1> - tranger data with @Output()</h1>
+    <div style="border: 1px solid red;">
+        <h3>coding</h3>
+        <img src="../../assets/image/@Output.svg" class="rounded" style="width: 100%;" alt="Cinque Terre">
+        <img src="../../assets/image/input-output-diagram.svg" class="rounded" style="width: 100%;" alt="Cinque Terre">
+        <img src="../../assets/image/tranfer-data-output.png" class="rounded" alt="Cinque Terre">
+
+        <h3>demo</h3>
+        <h1> - tranger data with @Output() : {{varBoolean}}</h1>
+        <button class="btn btn-primary" type="button" (click)="outputSubmit()">Text</button>
+        <br />
+        <h3> - tranfer data input with @output() : {{tranferInputData}}</h3>
+        <input type="text" class="form-control" (change)="actionTranferInputData($event.target.value)">
+    </div>
 </div>
