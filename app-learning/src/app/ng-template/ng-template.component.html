@@ -1,1 +1,58 @@
 <p>ng-template works!</p>
+
+<h5>
+    <b>1: Lý thuyết:</b> <br>
+    &nbsp; - Khi code HTML dc bao quanh bởi ng-template, phần HTML đó sẽ không dc render lên UI ngay lập tức. Mà chỉ dc
+    render trong một số trường hợp, ví dụ như khi *ngIf else tmpl hoặc thông qua ngTemplateOutlet mà chúng ta sẽ đề cập
+    đến ở phần sau của bài viết. <br>
+    &nbsp; - Template hiểu nôm na là mẫu <br>
+    <b>Khi nào cần dùng ng-template</b> <br>
+    &nbsp; - Dùng kết hợp với các Structure Directive của Angular, ví dụ như *ngIf <br>
+    &nbsp; - Khi một số UI element trong một component bị lặp lại trong chính component đó, nhưng phần code đó quá nhỏ
+    để tách ra làm một component riêng <br>
+    <b>Ưu điểm</b> <br>
+    &nbsp; - Với thành phần trùng lặp: Thay vì phải sửa ở 3 nơi, bây giờ ta chỉ cần sửa ở một vị trí đó là ng-template,
+    Tránh những lỗi typo hay find and replace bị thiếu<br>
+    &nbsp; - ng-template chỉ gói gọn một số dòng code nên dùng ng-template tiện hơn là tách ra một component mới.<br>
+
+
+</h5>
+
+<br>
+
+<h5>2: Coding vấn đề</h5> <br>
+<img src="../../assets/image/element-duplicate.png" class="rounded" alt="Cinque Terre"> <br>
+<div class="card">
+    <div class="card-header">
+        You have selected <span class="badge badge-primary">{{ counter }}</span> items.
+    </div>
+    <div class="card-body">
+        There are <span class="badge badge-primary">{{ counter }}</span> items was selected.
+    </div>
+    <div class="card-footer">
+        You have selected <span class="badge badge-primary">{{ counter }}</span> items.
+    </div>
+</div>
+
+<br>
+
+<h5>3: Coding dùng ng-template khi cấu trúc của item hiển thị trùng nhau về thẻ, tất cả item trùng sẽ gọi vào template</h5>
+<img src="../../assets/image/ng-template.png" class="rounded" alt="Cinque Terre"> <br>
+<div class="card">
+    <div class="card-header">
+        You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>.
+    </div>
+    <div class="card-body">
+        There are <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> was selected.
+    </div>
+    <div class="card-footer">
+        You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>.
+    </div>
+</div>
+<ng-template #counterTmpl>
+    <span class="badge badge-primary">{{ counter }}</span> items
+</ng-template>
+
+<br>
+
+<h5>3: Dùng ng-template để pass vào component khác. Hỗ trợ override template có sẵn trong component.</h5>

@@ -14,6 +14,7 @@ import { CssComponent } from '../css/css.component';
 import { TemplateVariableViewChildViewChildrenComponent } from '../template-variable-view-child-view-children/template-variable-view-child-view-children.component';
 import { TypeScriptDataTypeComponent } from '../type-script-data-type/type-script-data-type.component';
 import { NgTemplateComponent } from '../ng-template/ng-template.component';
+import { PipesComponent } from '../pipes/pipes.component';
 
 export const RoutesConfig: Routes = [
     {
@@ -77,6 +78,10 @@ export const RoutesConfig: Routes = [
     {
         path: 'ngTemplate',
         component: NgTemplateComponent
+    },
+    {
+        path: 'pipes',
+        component: PipesComponent
     }
     
 ];

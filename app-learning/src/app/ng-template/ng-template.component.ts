@@ -12,4 +12,5 @@ export class NgTemplateComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  counter: String = "demo_001";
 }

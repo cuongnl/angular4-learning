@@ -1,0 +1,21 @@
+<p>pipes works!</p>
+
+<h5>
+    <b>Lý thuyết</b> <br>
+    &nbsp; - pipe là một function nhận input mà chúng ta truyền vào, và output ra giá trị mình mong muốn. <br>
+    &nbsp; - thông tin server là: 2020-06-24T09:00:00.000Z >> cần transform data người dùng có thể hiểu. Jun 24, 2020, 5:00:00
+    PM <br>
+    &nbsp; - có 2 cách <br>
+        &nbsp; + Viết một function, nhận date input và return output. <br>
+        &nbsp; + Viêt một pipe, cũng nhận input và return output. <br>
+        
+        &nbsp; + syntax: <img src="../../assets/image/pipe_synctax.png" class="rounded" style="border:1px solid red" alt="Cinque Terre"> <br>
+        &nbsp; + syntax với param: <img src="../../assets/image/pipe_synctax_param.png" class="rounded" style="border:1px solid red" alt="Cinque Terre"> <br>
+
+</h5>
+
+<div>pipe:  {{ now | date }}</div> //Jun 24, 2020
+<div>pipe với param: {{ now | date:'medium'}}</div> //Jun 24, 2020, 5:00:00PMF
+<div>nhiều pipe - Chaining pipe: {{ now | date:'medium' | uppercase}} // JUN 24, 2020, 5:00:00 PM</div>
+
+<!-- <h2 class="ibox-title">{{ userId | appTitle }} User</h2> -->
